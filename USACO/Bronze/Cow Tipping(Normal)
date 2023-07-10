@@ -1,6 +1,6 @@
 //USACO 2017 January Contest, Bronze
 //Problem 3. Cow Tipping (Normal)
-
+//Java Solution
 
 import java.util.*;
 import java.io.*;
