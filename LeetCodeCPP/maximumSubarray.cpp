@@ -17,11 +17,11 @@ public:
             //the next positive number as the first in the subarray. Else, then
             //just keep on adding.
             currentNum = nums[i];
-            if(maxSum<0 && currentNum<0)
+            if(maxSum<0 && currentNum<0)//search for greatest negative number if no positive numbers currently
                 currentSum= max(currentSum, currentNum);
-            else if(currentSum<0 && currentNum>=0)
+            else if(currentSum<0 && currentNum>=0)//search for beginning of positive number in front sequence
                 currentSum = currentNum;
-            else if(maxSum>=0)
+            else if(maxSum>=0)//keep adding if there has already encountered positive number and adding new number is best decision
                 currentSum+=currentNum;
            
             maxSum = max(maxSum, currentSum);
